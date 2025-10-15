@@ -43,13 +43,13 @@ const Navbar = () => {
             ? "bg-transparent"
             : `${
                 scrolled
-                  ? "backdrop-blur-md bg-white/50 shadow-md w-full text-black"
+                  ? "backdrop-blur-2xl bg-white/75 shadow-md w-full text-black"
                   : "bg-transparent text-gray-100"
               }`
         }`}
       >
         {/* tablet/desktop menu  */}
-        <div className="xl:px-10 xl:max-w-[1400px] xl:mx-auto w-full py-4 px-6">
+        <div className="xl:px-10 xl:max-w-[1400px] xl:mx-auto w-full py-4 px-3">
           <div className="flex items-center justify-between md:text-xl xl:text-2xl">
             <div className="flex items-center gap-3 xl:gap-5">
               <Globe /> <p>English</p>

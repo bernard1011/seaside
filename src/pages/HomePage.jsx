@@ -1,15 +1,12 @@
 import Hero from "../components/Hero";
+import Welcome from "../components/Welcome";
+import BookYourStay from "../components/BookYourStay";
 
 const HomePage = () => {
     return (<>
         <Hero/>
-        фіовріфловрвол
-        фівофідлворлдіфвоі
-        фвлофівдлфіовілдфєвфвілдофвлдф
-        фівлдфіовлдофівдіоф
-        іфвлдфіовліфов
-        іфвлдфіовліфовіфловдлфіво
-        філдвофівлдіфовфвсфсфіс
+        <Welcome/>
+        <BookYourStay/>
     </>)
 }
 

@@ -13,7 +13,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
 
-        <header className="relative h-full flex flex-col gap-5 xl:gap-12 text-center items-center justify-center text-gray-50 xl:px-10 xl:max-w-[1400px] xl:mx-auto w-full py-4 px-6">
+        <header className="relative h-full flex flex-col gap-5 xl:gap-12 text-center items-center justify-center text-gray-50 xl:px-10 xl:max-w-[1400px] xl:mx-auto w-full py-4 px-3">
           <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-3xl">BEACHFRONT LUXURY ACCOMMODATION</h3>
           <span className="w-full h-0.5 bg-gray-400"></span>
           <h1 className="text-3xl font-extrabold font-dm xl:text-6xl">
