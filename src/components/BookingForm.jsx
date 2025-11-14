@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Calendar, Users, User } from 'lucide-react';
+import Dropdown from './Dropdown/Dropdown';
+import DropdownItem from './Dropdown/DropdownItem';
 
 const BookingForm = () => {
   const [checkInDate, setCheckInDate] = useState(null);
@@ -9,6 +11,8 @@ const BookingForm = () => {
   const [showCheckInCalendar, setShowCheckInCalendar] = useState(false);
   const [showCheckOutCalendar, setShowCheckOutCalendar] = useState(false);
   const [currentMonth, setCurrentMonth] = useState(new Date(2025, 9)); // October 2025
+  const AdultsNum = [1, 2, 3, 4, 5, 6]
+
 
   const monthNames = [
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -210,7 +214,7 @@ const BookingForm = () => {
         </div>
 
         {/* Adults */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <label className="block text-sm font-semibold text-gray-900 mb-2">
             Adults
           </label>
@@ -230,8 +234,11 @@ const BookingForm = () => {
               </svg>
             </div>
           </div>
-        </div>
+          
+        </div> */}
 
+      
+      <Dropdown buttonText="Adults" content={<DropdownItem items={`${AdultsNum.map(item=>(`Adults ${item}`))}`}/>}/>
         {/* Children */}
         <div className="mb-8">
           <label className="block text-sm font-semibold text-gray-900 mb-2">
