@@ -4,7 +4,7 @@ import { ChevronUp } from 'lucide-react';
 const DropdownButton = ({buttonText, open, isOpen}) => {
     return (
         <>
-        <div className={`relative flex items-center justify-between w-full p-3 text-gray-500 bg-gray-50 rounded-lg cursor-pointer border border-gray-200 ${open ? 'shadow-lg' : 'shadow-none'}`} onClick={isOpen}>
+        <div className={`relative flex items-center justify-between w-full p-3 text-gray-500 bg-gray-50 rounded-lg cursor-pointer border border-gray-200 bg-gradient-to-r from-blue-50 to-gray-50 ${open ? 'shadow-lg' : 'shadow-none'}`} onClick={isOpen}>
         {buttonText} 
         <span>
         {open ? <ChevronUp /> : <ChevronDown />}
